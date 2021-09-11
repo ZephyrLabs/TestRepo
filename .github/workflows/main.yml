@@ -31,4 +31,11 @@ jobs:
             sudo apt install build-essential
             gcc main.c -o main
             ./main
+            - name: Upload standalone firmware
+      
+      - name: download files 
+        uses: actions/upload-artifact@v2
+        with:
+          name: main.out
+          path: *.out
             
