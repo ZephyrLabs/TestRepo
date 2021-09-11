@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: build and run the code
         run: | 
-            sudo apt install build-essentials
+            sudo apt install build-essential
             gcc main.c -o main
             ./main
             
